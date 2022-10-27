@@ -22,7 +22,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
         for($espacio=0; $espacio<10; $espacio=$espacio+1){
             espacios(10-$espacio);
             ceros($espacio);
-            espacios(10-$espacio);
             echo "<br>";
         }
         ?>
