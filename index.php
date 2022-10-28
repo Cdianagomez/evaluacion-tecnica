@@ -6,24 +6,19 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
 <html>
     
     <body>
-        <?php
-        function espacios($espacio){
+    <?php
+        function espacios($espacio, $simbolo){
             for($i=0; $i<2*$espacio-1; $i++){
-                echo "&nbsp";
+                echo $simbolo;
             }
         }
         
-        function ceros($espacio){
-            for($i=0; $i<2*$espacio-1; $i++){
-                echo "0";
-            }
-        }
         echo "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"."*";
         for($espacio=0; $espacio<10; $espacio=$espacio+1){
-            espacios(10-$espacio);
-            ceros($espacio);
+            espacios(10-$espacio, "&nbsp");
+            espacios($espacio,"0");
             echo "<br>";
         }
-        ?>
+        ?>    
     </body>
 </html>
